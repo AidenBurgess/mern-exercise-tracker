@@ -11,14 +11,14 @@ router.route("/add").post((req, res) => {
 	const username = req.body.username;
 	const title = req.body.title;
 	const body = req.body.body;
-	const source = req.body.source | null;
+	const image = req.body.image | null;
 	const date = Date.parse(req.body.date);
 
 	const newPost = new Post({
 		username,
 		title,
 		body,
-		source,
+		image,
 		date,
 	});
 
