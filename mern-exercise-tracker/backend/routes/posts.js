@@ -12,14 +12,12 @@ router.route("/add").post((req, res) => {
 	const title = req.body.title;
 	const body = req.body.body;
 	const image = req.body.image | null;
-	const date = Date.parse(req.body.date);
 
 	const newPost = new Post({
 		username,
 		title,
 		body,
 		image,
-		date,
 	});
 
 	newPost
