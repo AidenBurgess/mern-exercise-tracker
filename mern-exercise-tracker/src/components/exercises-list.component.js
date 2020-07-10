@@ -32,7 +32,7 @@ export default class ExercisesList extends Component {
 
 	componentDidMount() {
 		axios
-			.get("http://13.239.96.117/exercises")
+			.get("http://13.239.96.117:5000/exercises")
 			.then((res) => {
 				this.setState({
 					exercises: res.data,
@@ -43,9 +43,11 @@ export default class ExercisesList extends Component {
 	}
 
 	deleteExercise(id) {
-		axios.delete(`http://localhost:5000/exercises/${id}`).then((res) => {
-			console.log(res);
-		});
+		axios
+			.delete(`http://13.239.96.117:5000/exercises/${id}`)
+			.then((res) => {
+				console.log(res);
+			});
 
 		this.setState({
 			exercises: this.state.exercises.filter((ex) => ex._id !== id),

@@ -26,7 +26,7 @@ export default class Community extends Component {
 
 	componentDidMount() {
 		axios
-			.get("http://localhost:5000/posts")
+			.get("http://13.239.96.117:5000/posts")
 			.then((res) => {
 				this.setState({
 					posts: res.data,
@@ -37,7 +37,7 @@ export default class Community extends Component {
 	}
 
 	// deleteExercise(id) {
-	// 	axios.delete(`http://localhost:5000/exercises/${id}`).then((res) => {
+	// 	axios.delete(`http://13.239.96.117:5000/exercises/${id}`).then((res) => {
 	// 		console.log(res);
 	// 	});
 

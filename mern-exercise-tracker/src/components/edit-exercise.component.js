@@ -25,7 +25,7 @@ export default class EditExercise extends Component {
 	componentDidMount() {
 		axios
 			.get(
-				`http://localhost:5000/exercises/${this.props.match.params.id}`
+				`http://13.239.96.117:5000/exercises/${this.props.match.params.id}`
 			)
 			.then((res) => {
 				this.setState({
@@ -36,7 +36,7 @@ export default class EditExercise extends Component {
 				});
 			});
 
-		axios.get("http://localhost:5000/users/").then((res) => {
+		axios.get("http://13.239.96.117:5000/users/").then((res) => {
 			if (res.data.length > 0) {
 				this.setState({
 					users: res.data.map((user) => user.username),
@@ -82,7 +82,7 @@ export default class EditExercise extends Component {
 
 		axios
 			.post(
-				`http://localhost:5000/exercises/update/${this.props.match.params.id}`,
+				`http://13.239.96.117:5000/exercises/update/${this.props.match.params.id}`,
 				exercise
 			)
 			.then((res) => console.log(res.data));
