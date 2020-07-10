@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/AidenBurgess/MERN-exercise-tracker/precache-manifest.644a17b89b9dced18ea3ada16d5ca62b.js"
+  "/AidenBurgess/MERN-exercise-tracker/precache-manifest.d8d975b0b302d1775f6c59f193b53197.js"
 );
 
 self.addEventListener('message', (event) => {
