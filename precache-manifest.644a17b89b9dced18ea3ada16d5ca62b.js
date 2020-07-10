@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dc4132f93052b3ab0df8b98f50640b9d",
+    "revision": "8dc853723c9a27141746a8a3ac3da876",
     "url": "/AidenBurgess/MERN-exercise-tracker/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AidenBurgess/MERN-exercise-tracker/static/css/2.9861d4a4.chunk.css"
   },
   {
-    "revision": "f667cf1073e9b40a3347",
+    "revision": "d9cc1aca4ee017be8b65",
     "url": "/AidenBurgess/MERN-exercise-tracker/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AidenBurgess/MERN-exercise-tracker/static/js/2.a9ffe119.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f667cf1073e9b40a3347",
-    "url": "/AidenBurgess/MERN-exercise-tracker/static/js/main.385685f2.chunk.js"
+    "revision": "d9cc1aca4ee017be8b65",
+    "url": "/AidenBurgess/MERN-exercise-tracker/static/js/main.c5392b39.chunk.js"
   },
   {
     "revision": "f066452d902a4cec504c",

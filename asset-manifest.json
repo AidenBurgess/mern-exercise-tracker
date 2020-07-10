@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/AidenBurgess/MERN-exercise-tracker/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/AidenBurgess/MERN-exercise-tracker/static/js/main.385685f2.chunk.js",
-    "main.js.map": "/AidenBurgess/MERN-exercise-tracker/static/js/main.385685f2.chunk.js.map",
+    "main.js": "/AidenBurgess/MERN-exercise-tracker/static/js/main.c5392b39.chunk.js",
+    "main.js.map": "/AidenBurgess/MERN-exercise-tracker/static/js/main.c5392b39.chunk.js.map",
     "runtime-main.js": "/AidenBurgess/MERN-exercise-tracker/static/js/runtime-main.1dc5dead.js",
     "runtime-main.js.map": "/AidenBurgess/MERN-exercise-tracker/static/js/runtime-main.1dc5dead.js.map",
     "static/css/2.9861d4a4.chunk.css": "/AidenBurgess/MERN-exercise-tracker/static/css/2.9861d4a4.chunk.css",
     "static/js/2.a9ffe119.chunk.js": "/AidenBurgess/MERN-exercise-tracker/static/js/2.a9ffe119.chunk.js",
     "static/js/2.a9ffe119.chunk.js.map": "/AidenBurgess/MERN-exercise-tracker/static/js/2.a9ffe119.chunk.js.map",
     "index.html": "/AidenBurgess/MERN-exercise-tracker/index.html",
-    "precache-manifest.ccac102204183eceaf7c3d1c2ec4052b.js": "/AidenBurgess/MERN-exercise-tracker/precache-manifest.ccac102204183eceaf7c3d1c2ec4052b.js",
+    "precache-manifest.644a17b89b9dced18ea3ada16d5ca62b.js": "/AidenBurgess/MERN-exercise-tracker/precache-manifest.644a17b89b9dced18ea3ada16d5ca62b.js",
     "service-worker.js": "/AidenBurgess/MERN-exercise-tracker/service-worker.js",
     "static/css/2.9861d4a4.chunk.css.map": "/AidenBurgess/MERN-exercise-tracker/static/css/2.9861d4a4.chunk.css.map",
     "static/css/main.5ecd60fb.chunk.css.map": "/AidenBurgess/MERN-exercise-tracker/static/css/main.5ecd60fb.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.9861d4a4.chunk.css",
     "static/js/2.a9ffe119.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.385685f2.chunk.js"
+    "static/js/main.c5392b39.chunk.js"
   ]
 }
