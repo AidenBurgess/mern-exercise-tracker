@@ -5,13 +5,21 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
 const PostPreview = (props) => (
-	<Card style={{ width: "18rem", marginTop: "1rem", flexGrow: "1" }}>
-		<Card.Body>
-			<Card.Title>{props.post.title}</Card.Title>
-			<Card.Text>{props.post.body}</Card.Text>
-			<Button variant="primary">See post</Button>
-		</Card.Body>
-	</Card>
+	<div style={{ border: "solid 5px transparent" }}>
+		<Card
+			style={{
+				width: "18rem",
+				height: "18rem",
+				flexGrow: "1",
+			}}
+		>
+			<Card.Body>
+				<Card.Title>{props.post.title}</Card.Title>
+				<Card.Text>{props.post.body}</Card.Text>
+				<Button variant="primary">See post</Button>
+			</Card.Body>
+		</Card>
+	</div>
 );
 
 export default class Community extends Component {
