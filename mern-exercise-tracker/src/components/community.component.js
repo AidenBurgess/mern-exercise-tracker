@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
 const PostPreview = (props) => (
-	<Card style={{ width: "18rem", flex: 1 }}>
+	<Card style={{ width: "18rem", marginTop: "1rem", flexGrow: "1" }}>
 		<Card.Body>
 			<Card.Title>{props.post.title}</Card.Title>
 			<Card.Text>{props.post.body}</Card.Text>
@@ -59,7 +59,14 @@ export default class Community extends Component {
 					<h3>Community Posts</h3>
 					<Button>Add New Post</Button>
 				</div>
-				<div style={{ display: "flex", flexDirection: "row" }}>
+				<div
+					style={{
+						display: "flex",
+						flexDirection: "row",
+						flexWrap: "wrap",
+						justifyContent: "space-evenly",
+					}}
+				>
 					{this.postList()}
 				</div>
 			</div>
