@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "df6e4325849bfce88fd8b2e4c393317f",
+    "revision": "5afbf3001705dfd36f0e3422f94b748e",
     "url": "/AidenBurgess/mern-exercise-tracker/index.html"
   },
   {
