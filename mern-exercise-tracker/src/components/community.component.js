@@ -3,6 +3,7 @@ import axios from "axios";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+import serverIP from "../config";
 
 const PostPreview = (props) => (
 	<div style={{ border: "solid 5px transparent" }}>
@@ -34,7 +35,7 @@ export default class Community extends Component {
 
 	componentDidMount() {
 		axios
-			.get("http://13.239.96.117:5000/posts")
+			.get(`${serverIP}/posts/`)
 			.then((res) => {
 				this.setState({
 					posts: res.data,

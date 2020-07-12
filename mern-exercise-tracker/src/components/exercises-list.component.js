@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import serverIP from "../config";
 
 const Exercise = (props) => (
 	<tr>
@@ -32,22 +33,19 @@ export default class ExercisesList extends Component {
 
 	componentDidMount() {
 		axios
-			.get("http://13.239.96.117:5000/exercises")
+			.get(`${serverIP}/exercises`)
 			.then((res) => {
 				this.setState({
 					exercises: res.data,
 				});
-				console.log(this.state.exercises);
 			})
 			.catch((err) => console.log(err));
 	}
 
 	deleteExercise(id) {
-		axios
-			.delete(`http://13.239.96.117:5000/exercises/${id}`)
-			.then((res) => {
-				console.log(res);
-			});
+		axios.delete(`${serverIP}/exercises/${id}`).then((res) => {
+			console.log(res);
+		});
 
 		this.setState({
 			exercises: this.state.exercises.filter((ex) => ex._id !== id),

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import serverIP from "../config";
 
 export default class EditExercise extends Component {
 	constructor(props) {
@@ -24,9 +25,7 @@ export default class EditExercise extends Component {
 
 	componentDidMount() {
 		axios
-			.get(
-				`http://13.239.96.117:5000/exercises/${this.props.match.params.id}`
-			)
+			.get(`${serverIP}/exercises/${this.props.match.params.id}`)
 			.then((res) => {
 				this.setState({
 					username: res.data.username,
@@ -36,7 +35,7 @@ export default class EditExercise extends Component {
 				});
 			});
 
-		axios.get("http://13.239.96.117:5000/users/").then((res) => {
+		axios.get(`${serverIP}/users`).then((res) => {
 			if (res.data.length > 0) {
 				this.setState({
 					users: res.data.map((user) => user.username),
@@ -82,12 +81,14 @@ export default class EditExercise extends Component {
 
 		axios
 			.post(
-				`http://13.239.96.117:5000/exercises/update/${this.props.match.params.id}`,
+				`${serverIP}/exercises/update/${this.props.match.params.id}`,
 				exercise
 			)
-			.then((res) => console.log(res.data));
-
-		window.location = "/";
+			.then((res) => {
+				console.log(res.data);
+				window.location = "/";
+			})
+			.catch((err) => console.log(err));
 	}
 
 	render() {

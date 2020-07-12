@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import serverIP from "../config";
 
 export default class CreateUser extends Component {
 	constructor(props) {
@@ -29,7 +30,7 @@ export default class CreateUser extends Component {
 		console.log(user);
 
 		axios
-			.post("http://13.239.96.117:5000/users/add", user)
+			.post(`${serverIP}/users/add`, user)
 			.then((res) => console.log(res.data));
 
 		this.setState({
