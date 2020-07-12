@@ -1,10 +1,10 @@
 # mern-exercise-tracker
 
 ## Technologies
-Created using the MERN stack.
-Frontend written with React
-Backend hosted on AWS EC2 instance, written with Express
-Database hosted using MongoDB Atlas
+Created using the MERN stack.  
+Frontend written with React  
+Backend hosted on AWS EC2 instance, written with Express  
+Database hosted using MongoDB Atlas  
 
 
 ## Credits
